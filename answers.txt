@@ -9,3 +9,20 @@ Lab Part 3 - Check  Repository Status
 answer: Red
 2. What does "Untracked" mean?
 answer : it's not save to the Git Repository Status\
+
+Lab Part 4 - Stage Changes
+1. Why do you think Git requires a staging area?
+qAnswer : is when you use the Git Add * to select
+
+Lab Part 5 - Commit Change
+select the file using git add then you use the commit to save whatever you have made
+created file
+Lab Part 5 - Commit Changes
+1. What is the commit message?
+Answer : Commit m
+2. What is the display after runing git log?
+Answer : display after the git log and the terminal
+
+Lab Part 8 - Make Another Change
+1. Do you see the change in the remote repository?
+Answer : it's not in my repository, i only see it on my local computer
