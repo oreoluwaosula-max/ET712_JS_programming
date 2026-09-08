@@ -1,0 +1,247 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #222;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 500px;
+            padding: 80px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #e8f0ff;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #444;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .pricing h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 300px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .card ul {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .card li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>MyBrand</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Build Something Amazing</h1>
+
+            <p>
+                Simple, powerful, and affordable solutions
+                designed to help you reach your goals.
+            </p>
+
+            <a href="#pricing" class="btn">View Pricing</a>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <h2>Choose Your Plan</h2>
+
+        <div class="pricing-container">
+
+            <!-- Basic Plan -->
+            <div class="card">
+                <h3>Basic</h3>
+                <div class="price">$9</div>
+
+                <ul>
+                    <li>1 User</li>
+                    <li>5 Projects</li>
+                    <li>Basic Support</li>
+                    <li>5 GB Storage</li>
+                </ul>
+
+                <a href="#" class="btn">Get Started</a>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="card">
+                <h3>Pro</h3>
+                <div class="price">$19</div>
+
+                <ul>
+                    <li>5 Users</li>
+                    <li>Unlimited Projects</li>
+                    <li>Priority Support</li>
+                    <li>50 GB Storage</li>
+                </ul>
+
+                <a href="#" class="btn">Get Started</a>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="card">
+                <h3>Premium</h3>
+                <div class="price">$39</div>
+
+                <ul>
+                    <li>Unlimited Users</li>
+                    <li>Unlimited Projects</li>
+                    <li>24/7 Support</li>
+                    <li>200 GB Storage</li>
+                </ul>
+
+                <a href="#" class="btn">Get Started</a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
+```
