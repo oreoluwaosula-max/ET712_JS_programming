@@ -1,0 +1,169 @@
+/* ================= GENERAL ================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+    min-height: 520px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15)
+        ),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/* ================= HERO TEXT ================= */
+
+.hero-content {
+    text-align: center;
+    padding: 15px;
+}
+
+.hero-content h1 {
+    color: #0d6efd;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hero-content p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* ================= DESTINATION CARDS ================= */
+
+.destination-card {
+    border: none;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.2s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.destination-card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.destination-card .card-body {
+    background-color: white;
+}
+
+.destination-card .card-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.destination-card .card-text {
+    font-size: 12px;
+    color: #555;
+}
+
+
+/* ================= EXPLORE SECTION ================= */
+
+.explore-section {
+    text-align: center;
+    color: white;
+
+    padding: 35px 20px 10px;
+}
+
+.explore-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.explore-section p {
+    font-size: 12px;
+}
+
+
+/* ================= TRAVEL ASSISTANT ================= */
+
+.travel-assistant {
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.travel-assistant h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+
+.ai-response {
+    border: 1px solid #ddd;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    font-size: 12px;
+
+    background-color: white;
+}
+
+
+/* ================= PLAN PAGE ================= */
+
+main h1 {
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+main > .text-center p {
+    color: #666;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    margin-top: 20px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .destination-card img {
+        height: 180px;
+    }
+
+}
