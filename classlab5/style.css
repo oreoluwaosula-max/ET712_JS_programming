@@ -1,0 +1,253 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #173b32;
+}
+
+/* Header */
+.site-header {
+    background-color: #173b32;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Website Name */
+.brand {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    gap: 25px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation a:hover {
+    color: #b9e7b0;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(8, 32, 24, 0.35),
+            rgba(8, 32, 24, 0.70)
+        ),
+        url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* About Hero */
+.about-hero {
+    min-height: 600px;
+}
+
+/* Hero Message */
+.hero-message {
+    max-width: 700px;
+    color: white;
+}
+
+/* Small Heading */
+.eyebrow {
+    margin-bottom: 15px;
+
+    color: #b9e7b0;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Main Hero Heading */
+.hero-message h1 {
+    margin-bottom: 20px;
+
+    font-size: 55px;
+    line-height: 1.1;
+}
+
+/* Hero Paragraph */
+.hero-message > p:not(.eyebrow) {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Hero Button */
+.hero-link {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: #b9e7b0;
+    color: #173b32;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-link:hover {
+    background-color: white;
+}
+
+/* Card Container */
+.container {
+    display: flex;
+    justify-content: center;
+
+    padding: 60px 20px;
+}
+
+/* Card */
+.card {
+    width: 350px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 25px;
+}
+
+.card-content h2 {
+    margin-bottom: 12px;
+
+    font-size: 28px;
+}
+
+.card-content p {
+    margin-bottom: 20px;
+
+    line-height: 1.6;
+}
+
+/* Card Link */
+.card-content a {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background-color: #173b32;
+    color: white;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    background-color: #216e58;
+}
+
+/* Contact Page */
+.contact-content {
+    max-width: 700px;
+
+    margin: 80px auto;
+
+    padding: 40px 25px;
+
+    text-align: center;
+}
+
+.contact-content h1 {
+    margin-bottom: 20px;
+
+    font-size: 50px;
+}
+
+.contact-content p {
+    margin-bottom: 20px;
+
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.contact-content a {
+    color: #216e58;
+    font-weight: bold;
+}
+
+/* Mobile Design */
+@media (max-width: 600px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .navigation {
+        gap: 15px;
+    }
+
+    .navigation a {
+        font-size: 15px;
+    }
+
+    .hero-message h1 {
+        font-size: 40px;
+    }
+
+    .hero-message > p:not(.eyebrow) {
+        font-size: 17px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
