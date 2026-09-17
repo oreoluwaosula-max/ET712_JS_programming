@@ -1,0 +1,99 @@
+  ```css
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-content {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 50px 30px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-content .eyebrow {
+    margin-bottom: 15px;
+
+    color: #216e58;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-content h1 {
+    margin-bottom: 20px;
+
+    color: #173b32;
+
+    font-size: 48px;
+}
+
+.contact-content p {
+    margin-bottom: 20px;
+
+    color: #555;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-content a {
+    color: #216e58;
+
+    font-weight: bold;
+}
+
+.contact-content a:hover {
+    color: #173b32;
+}
+
+
+/* Contact Button */
+
+.contact-content .hero-link {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 13px 25px;
+
+    background-color: #173b32;
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+}
+
+.contact-content .hero-link:hover {
+    background-color: #216e58;
+}
+
+
+/* Mobile Contact Page */
+
+@media (max-width: 600px) {
+
+    .contact-content {
+        margin: 50px 20px;
+        padding: 35px 20px;
+    }
+
+    .contact-content h1 {
+        font-size: 38px;
+    }
+
+    .contact-content p {
+        font-size: 17px;
+    }
+
+}
+```

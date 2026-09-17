@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+}
+
+div.qcc{
+    background-color: darkblue;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 20px;
+    height: 7srem;
+
+}
+
+div.et {
+    border: ridge 2px white;
+    padding: 20px;
+    background-color: crimson;
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style:italic;
+}
+h2.greet{text-align: center;}
