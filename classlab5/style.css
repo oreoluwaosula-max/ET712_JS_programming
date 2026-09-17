@@ -13,6 +13,38 @@
     justify-content: space-between;
     align-items: center;
 }
+/* Header */
+
+
+/* Website Name */
+.brand {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    gap: 25px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation a:hover {
+    color: #b9e7b0;
+}
+.title-message {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 40px;
+    color: #173b32;
+}
 /* Card Container */
 .container {
     display: flex;
