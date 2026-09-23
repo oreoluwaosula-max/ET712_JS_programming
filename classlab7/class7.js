@@ -8,7 +8,7 @@ console.log("/nExample 2: array methods")
 mixedarray.shift()
 console.log(`Array after shift method =${mixedarray}`)
 
-// add a values to the left-most in array mixedarray
+// add  values to the left-most in array mixedarray
 mixedarray.unshift("NY",280)
 console.log(`Array after unshift method = ${mixedarray}`)
 
@@ -25,67 +25,67 @@ console.log(`What is the index for cherries ${indexcherries}`)
 indexqcc =mixedarray.indexOf("QCC")
 console.log(`What is thee index of QCC? ${indexqcc}`)
 
-console.log("\n ---- example 3: if statement"){
+console.log("\n ---- example 3: if statement")
 // check for one condition
 // it will run code wrap in between the curly braces if the statment is true
-// otherwise, if the statement is false, it will skip the code wrap in between the curly braces if the statment is false
+// otherwise, if the statement is false, it will skip the code wrap in between the curly braces 
 let goodmood = true
 let gotsleep = true
-}
+
 /*
-if(goodmood && gotsleep){
-    console.log('Today is a good day!)
-}
-    */
-   if (goodmood && gotsleep){
+if (gotsleep ==true && goodmood === true){
     console.log('Today is a good day!')
-   }
-   console.log('good Bye!')
+}
+*/
+if (goodmood && gotsleep){
+    console.log('Today is a good day!')
+}
+console.log('Good Bye')
 
-   console.log("\n ---- eexample 4: if-else statement")
+console.log("\n ---- example 4: if statement")
+// has two branches
+let n1 = 16
+let n2 = 16
 
-
-if(n1===n2){
-    console.log('The number are equal')
+if (n1===n2){
+    console.log('The numbers are equal')
 }
 else{
-    console.log("The number is not equal")
+    console.log("The numbers are not equal")
 }
 
-console.log("\n ---- example 5: if-else statement witth isNaN function")
-let useriput = prompt("Enter a number")
+console.log("\n--------example 5:if else if statement isNAN function")
+let userinput = prompt("Enter a number")
 let checkinput = isNaN(parseInt(userinput))
 
-if(checkinput){
-    console.log(`${useriput} is a string`)
+if (checkinput){
+    console.log(`${userinput}is a string`)
 }
 else{
-    console.log(`${useriput} is a number`)
+    console.log(`${userinput}is a number`)
 }
 
-console.log("\n ----- example 6: multiway conditional statement")
-// check if the number is zero, negative or positive
-let inputnumber = parseInt(useriput)
-if(inputnumber ===0){
-      console.log('The number is zero')
+console.log("\n-----example 6:multiway conditional statement")
+//check if the number is zero, negative or positive
+let inputnumber = parseInt(userinput)
+if (inputnumber === 0){
+    console.log('The number is zero')
 }
-else if (inputnumber >0){
-    console.log('The number is positive ')
+else if (inputnumber>0){
+    console.log('The number is positive')
 }
 else if (inputnumber<0){
     console.log('The number is negative')
 }
-
-
 else{
-    console.log('The input is not a number')
+     console.log('The input is not a number')
 }
 
 console.log("\n ----- example 7: AND operator")
 // AND operator && returns a true if all statements are true
-// check if a user is 6+ characters and has no space
+// check if a username is 6+ characters and has no space
 let username = prompt("Enter a username") 
-if (username.length >=6 && username.indexOf("") === -1){
+if (username.length >=6 && username.indexOf(" ") === -1){
     console.log('Valid username')
 }
 else{
@@ -95,5 +95,13 @@ else{
 console.log("\n ----- example 8: OR operator")
 // OR operator || returns a true if one of the statement is true
 // rate a book if is excellent, good, average, invalid
-let rate = parseInt(prompt("How do you likee the book?\n3 for excellent, 2 for good , 1 for avaerage")
-)
+let rate = parseInt(prompt("How do you likee the book?\n3 for excellent, 2 for good , 1 for avaerage"))
+if (rate === 3 || rate ===2){
+    console.log('Thank you for choosing The book')
+}
+else if (rate ===1 || rate ===0){
+    console.log('We are sorry that you find The Book boring')
+}
+else{
+    console.log("INVALID RATE")
+}
