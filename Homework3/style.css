@@ -1,0 +1,48 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 30px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: steelblue;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 20px auto;
+    user-select: none;
+}
+
+#count {
+    font-size: 1.5rem;
+    color: darkblue;
+}
+
+#resetBtn {
+    padding: 10px 25px;
+    font-size: 1rem;
+    background-color: lightblue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#resetBtn:hover {
+    background-color: skyblue;
+}
