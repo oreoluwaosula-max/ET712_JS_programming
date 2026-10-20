@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="gallery.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Explore the Gallery</h1>
+        <p>Use the arrows to explore all six cards.</p>
+
+        <div class="gallery-window">
+            <div class="gallery-track" id="galleryTrack">
+
+                <article class="card">
+                    <img src="https://picsum.photos/id/1015/400/250" alt="Mountain landscape">
+                    <h2>Nature</h2>
+                    <p>Explore beautiful natural landscapes.</p>
+                    <a href="https://en.wikipedia.org/wiki/Nature">Learn More</a>
+                </article>
+
+                <article class="card">
+                    <img src="https://picsum.photos/id/1011/400/250" alt="Ocean and mountains">
+                    <h2>Adventure</h2>
+                    <p>Discover exciting places to explore.</p>
+                    <a href="https://en.wikipedia.org/wiki/Adventure">Learn More</a>
+                </article>
+
+                <article class="card">
+                    <img src="https://picsum.photos/id/1025/400/250" alt="Dog outdoors">
+                    <h2>Animals</h2>
+                    <p>Learn about animals around the world.</p>
+                    <a href="https://en.wikipedia.org/wiki/Animal">Learn More</a>
+                </article>
+
+                <article class="card">
+                    <img src="https://picsum.photos/id/1039/400/250" alt="Coastal scenery">
+                    <h2>Travel</h2>
+                    <p>Find inspiration for your next trip.</p>
+                    <a href="https://en.wikipedia.org/wiki/Travel">Learn More</a>
+                </article>
+
+                <article class="card">
+                    <img src="https://picsum.photos/id/1040/400/250" alt="Forest landscape">
+                    <h2>Outdoors</h2>
+                    <p>Enjoy fresh air and outdoor activities.</p>
+                    <a href="https://en.wikipedia.org/wiki/Outdoor_recreation">Learn More</a>
+                </article>
+
+                <article class="card">
+                    <img src="https://picsum.photos/id/106/400/250" alt="Water and scenery">
+                    <h2>Photography</h2>
+                    <p>Discover the beauty of photography.</p>
+                    <a href="https://en.wikipedia.org/wiki/Photography">Learn More</a>
+                </article>
+
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button id="leftButton" aria-label="Previous three cards">&lt;</button>
+            <span id="pageNumber">Page 1 of 2</span>
+            <button id="rightButton" aria-label="Next three cards">&gt;</button>
+        </div>
+    </main>
+</body>
+</html>
