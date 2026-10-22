@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Class 14</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="page-header">
+        <h1>Ore-Oluwa Osula</h1>
+        <p>Window and Form Events</p>
+    </header>
+
+    <main>
+
+        <!-- Window Events: Image Gallery -->
+        <section class="gallery-section">
+            <h2>Window Events</h2>
+
+            <p class="section-description">
+                Use the arrows to explore the seasons.
+            </p>
+
+            <div class="maincontainer">
+
+                <div class="gallerycontainer">
+
+                    <img
+                        class="galleryimage"
+                        src="./images/spring.jpg"
+                        alt="Spring flowers"
+                        loading="lazy"
+                    >
+
+                    <img
+                        class="galleryimage"
+                        src="./images/summer.jpg"
+                        alt="Summer beach"
+                        loading="lazy"
+                    >
+
+                    <img
+                        class="galleryimage"
+                        src="./images/winter.jpg"
+                        alt="Winter snow"
+                        loading="lazy"
+                    >
+
+                    
+                    <img
+                     class="galleryimage"
+                     src="./images/fall.jpg"
+                     alt="Autumn scenery"
+                     loading="lazy"
+                     >
+
+
+                </div>
+
+                <button
+                    type="button"
+                    class="btnleft"
+                    aria-label="Previous season"
+                >
+                    &#10094;
+                </button>
+
+                <button
+                    type="button"
+                    class="btnright"
+                    aria-label="Next season"
+                >
+                    &#10095;
+                </button>
+
+            </div>
+        </section>
+
+        <!-- Form Events: Username and Password -->
+        <section class="formsection">
+
+            <h2>Form Events</h2>
+
+            <p class="section-description">
+                Enter a username and password to test form validation.
+            </p>
+
+            <form id="myForm" novalidate>
+
+                <div class="formsession">
+                    <label for="username">Username</label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your username"
+                        autocomplete="username"
+                        required
+                    >
+
+                    <p
+                        id="usernameError"
+                        class="error"
+                        aria-live="polite"
+                    ></p>
+                </div>
+
+                <div class="formsession">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="new-password"
+                        aria-describedby="passwordHelp passwordError"
+                        required
+                    >
+
+                    <p id="passwordHelp" class="passwordmsg">
+                        Password must be at least 8 characters.
+                    </p>
+
+                    <p
+                        id="passwordError"
+                        class="error"
+                        aria-live="polite"
+                    ></p>
+                </div>
+
+                <button
+                    type="submit"
+                    class="submitbtn"
+                    disabled
+                >
+                    Submit
+                </button>
+
+            </form>
+
+            <div class="msg" aria-live="polite">
+                <p id="welcomeMessage">Welcome!</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Class 14 | JavaScript Window and Form Events</p>
+    </footer>
+
+</body>
+</html>
