@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: #292b45;
+    color: white;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #e1e2f0;
+}
+
+main {
+    width: min(1100px, 94%);
+    margin: 35px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #292b45;
+}
+
+.section-description {
+    text-align: center;
+    color: #666;
+}
+
+/* Image gallery */
+.maincontainer {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+.gallerycontainer {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    border-radius: 12px;
+}
+
+.galleryimage {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+.btnright,
+.btnleft {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(41, 43, 69, 0.9);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnright {
+    right: 12px;
+}
+
+.btnleft {
+    left: 12px;
+}
+
+.btnright:hover,
+.btnleft:hover {
+    background-color: #555a87;
+}
+
+
+.formsection {
+    margin-top: 55px;
+}
+
+#myForm {
+    width: min(420px, 100%);
+    margin: 25px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #e0e3ed;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.formsession {
+    margin-bottom: 20px;
+}
+
+.formsession label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.formsession input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.formsession input:focus {
+    outline: 2px solid #777cc1;
+    border-color: #555a87;
+}
+
+.passwordmsg {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.error {
+    color: #c62828;
+    font-size: 13px;
+    margin: 5px 0 0;
+}
+
+.submitbtn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #444a85;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submitbtn:hover {
+    background-color: #292b45;
+}
+
+.submitbtn:disabled,
+.disablebtn {
+    background-color: #b7b9c8;
+    color: #555;
+    cursor: not-allowed;
+}
+
+
+.msg {
+    width: min(420px, 100%);
+    margin: 20px auto;
+    text-align: center;
+    color: #292b45;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+footer {
+    margin-top: 50px;
+    padding: 18px;
+    background-color: #292b45;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+@media (max-width: 600px) {
+    main {
+        width: 92%;
+    }
+
+    .galleryimage {
+        height: 240px;
+    }
+
+    #myForm {
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
+
