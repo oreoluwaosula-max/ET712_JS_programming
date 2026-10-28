@@ -97,11 +97,6 @@ buttons.forEach(function (button) {
 /*
 AI Assistance:
 
-AI helped me understand how JavaScript event listeners work
-and how to connect button clicks to a calculation function.
-I used the suggestion to convert input values to numbers
-before performing calculations. I also used a function to
-perform all four arithmetic operations. AI helped me handle
-empty inputs, prevent division by zero, and change button
-colors when the mouse moves over them.
+AI helped me understand event listeners, perform calculations, and convert input values into numbers. 
+It also helped me handle empty inputs, prevent division by zero, and change button colors when hovered over.
 */
