@@ -5,22 +5,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click Counter</title>
+    <title>Simple Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Ore-Oluwa Osula</h1>
-    <h2>Click Counter Circle</h2>
+    <h1>Simple Calculator</h1>
 
-    <p>Click the circle to increase the counter!</p>
+    <div id="calculator">
 
-    <div class="circle" id="circle">0</div>
+        <input type="number" id="num1" placeholder="Enter first number">
 
-    <p>Counter: <span id="count">0</span></p>
+        <input type="number" id="num2" placeholder="Enter second number">
 
-    <button id="resetBtn">Reset</button>
+        <div id="buttons">
+            <button id="addBtn">+</button>
+            <button id="subtractBtn">−</button>
+            <button id="multiplyBtn">×</button>
+            <button id="divideBtn">÷</button>
+        </div>
+
+        <p id="result">Result:</p>
+
+    </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
+
