@@ -1,5 +1,4 @@
 
-
 /*
 Name: Ore-Oluwa Osula
 Course: JavaScript Programming

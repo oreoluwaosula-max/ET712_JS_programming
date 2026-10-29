@@ -1,0 +1,186 @@
+/* TABLETS: screens up to 1050px */
+@media (max-width: 1050px) {
+  .site-header {
+    width: calc(100% - 36px);
+    min-height: 135px;
+  }
+
+  .brand {
+    font-size: 2.6rem;
+  }
+
+  .category-grid {
+    width: calc(100% - 36px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .category-card {
+    min-height: 310px;
+  }
+
+  .activities-section,
+  .empty-state,
+  .bottom-banner {
+    width: calc(100% - 36px);
+  }
+
+  .activity-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE: screens up to 700px */
+@media (max-width: 700px) {
+  .site-header {
+    width: calc(100% - 28px);
+    min-height: 118px;
+    padding-top: 15px;
+  }
+
+  .brand {
+    top: 30px;
+    font-size: 1.8rem;
+  }
+
+  .round-button {
+    width: 46px;
+    height: 46px;
+    font-size: 1.4rem;
+  }
+
+  .top-actions {
+    gap: 7px;
+  }
+
+  .welcome {
+    padding: 32px 15px 24px;
+  }
+
+  .eyebrow {
+    font-size: .78rem;
+    padding: 9px 13px;
+  }
+
+  .welcome h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-copy {
+    font-size: 1rem;
+  }
+
+  .category-grid {
+    width: calc(100% - 28px);
+    gap: 16px;
+  }
+
+  .category-card {
+    min-height: 260px;
+    border-radius: 25px;
+    padding: 26px 12px 36px;
+  }
+
+  .card-emoji {
+    font-size: 3.2rem;
+    margin-bottom: 18px;
+  }
+
+  .card-title {
+    font-size: 1.28rem;
+    margin-bottom: 14px;
+  }
+
+  .card-description {
+    font-size: .95rem;
+  }
+
+  .activities-section,
+  .empty-state {
+    width: calc(100% - 28px);
+    padding: 20px 14px;
+    margin-top: 28px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .activity-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .activity-card {
+    min-height: 130px;
+  }
+
+  .activity-card .item-emoji {
+    font-size: 2.1rem;
+  }
+
+  .activity-card .item-name {
+    font-size: .88rem;
+  }
+
+  .bottom-banner {
+    width: calc(100% - 28px);
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .banner-star {
+    font-size: 2.2rem;
+  }
+
+  .bottom-banner .pill-button {
+    margin-left: 0;
+  }
+
+  .site-footer {
+    padding-bottom: 80px;
+  }
+
+  .go-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+/* SMALL PHONES: screens up to 420px */
+@media (max-width: 420px) {
+  .site-header {
+    min-height: 105px;
+  }
+
+  .brand {
+    top: 65px;
+    font-size: 1.7rem;
+  }
+
+  .welcome h1 {
+    font-size: 1.65rem;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+
+  .category-card {
+    min-height: 230px;
+  }
+
+  .activity-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #searchInput {
+    font-size: .9rem;
+  }
+
+  .modal {
+    padding: 32px 18px 22px;
+  }
+}
