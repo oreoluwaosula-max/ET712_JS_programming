@@ -24,16 +24,22 @@ function Contact() {
             We're here to help you explore new digital possibilities.
           </p>
 
-          <div className="contact-detail">
-            <span>✉️</span>
-            <div>
-              <h3>Email</h3>
-              <a href="mailto:nexatech@gmail.com">
-                nexatech@gmail.com
-              </a>
-            </div>
-          </div>
-
+          
+         <div className="contact-detail">
+  <span>✉️</span>
+  <div>
+    <h3>Email</h3>
+    <button
+      type="button"
+      className="contact-email-link"
+      onClick={() =>
+        window.dispatchEvent(new Event("open-nexatech-email"))
+      }
+    >
+      nexatech@gmail.com
+    </button>
+  </div>
+        </div>
           <div className="contact-detail">
             <span>☎️</span>
             <div>

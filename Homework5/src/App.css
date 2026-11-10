@@ -970,6 +970,234 @@ main {
   }
 }
 
+
+/* =====================================
+   GMAIL-STYLE FLOATING EMAIL WINDOW
+===================================== */
+
+.nav-contact button {
+  border: 1px solid #36a9e1;
+  background: transparent;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-contact button:hover {
+  background: #1685bd;
+  box-shadow: 0 0 20px rgba(54, 169, 225, 0.4);
+}
+
+.email-compose {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  width: 430px;
+  max-width: calc(100vw - 30px);
+  height: 500px;
+  background: #ffffff;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: emailSlideUp 0.3s ease;
+}
+
+.email-compose.minimized {
+  height: auto;
+}
+
+.email-compose-header {
+  min-height: 55px;
+  padding: 0 18px;
+  background: #edf3fc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #102b50;
+}
+
+.email-compose-header strong {
+  font-size: 16px;
+}
+
+.email-window-actions {
+  display: flex;
+  gap: 18px;
+}
+
+.email-window-actions button {
+  border: none;
+  background: transparent;
+  color: #53657b;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.email-compose-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  padding: 0 18px;
+}
+
+.email-recipient {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 17px 2px;
+  border-bottom: 1px solid #dce4ef;
+  color: #53657b;
+  font-size: 14px;
+}
+
+.email-recipient strong {
+  color: #102b50;
+  font-weight: 500;
+}
+
+.email-compose-form input {
+  width: 100%;
+  padding: 17px 2px;
+  border: none;
+  border-bottom: 1px solid #dce4ef;
+  outline: none;
+  font-size: 14px;
+  color: #172b4d;
+  background: white;
+}
+
+.email-compose-form input:focus {
+  border-bottom-color: #168bd4;
+}
+
+.email-compose-form textarea {
+  flex: 1;
+  min-height: 140px;
+  width: 100%;
+  resize: none;
+  padding: 20px 5px;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #172b4d;
+  background: white;
+}
+
+.email-compose-form textarea::placeholder,
+.email-compose-form input::placeholder {
+  color: #8998a9;
+}
+
+.email-compose-footer {
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.email-send-button {
+  background: #1765d8;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 28px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.email-send-button:hover {
+  background: #0750b8;
+}
+
+.email-delete-button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #53657b;
+}
+
+.email-success {
+  text-align: center;
+  margin: auto;
+  padding: 25px 15px;
+  color: #102b50;
+}
+
+.success-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 15px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e1f7ed;
+  color: #15945b;
+  font-size: 26px;
+}
+
+.email-success p {
+  color: #697e95;
+  line-height: 1.6;
+  font-size: 13px;
+  margin: 12px 0 20px;
+}
+
+.email-success button {
+  border: none;
+  background: #1765d8;
+  color: white;
+  border-radius: 20px;
+  padding: 11px 20px;
+  cursor: pointer;
+}
+
+@keyframes emailSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .email-compose {
+    right: 10px;
+    bottom: 10px;
+    width: calc(100vw - 20px);
+    height: 470px;
+  }
+}
+
+/* CONTACT EMAIL LINK */
+.contact-email-link {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #168bd4;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.contact-email-link:hover {
+  color: #0750b8;
+  text-decoration: underline;
+}
+
+
 /* =====================================
    NOT FOUND PAGE
 ===================================== */
