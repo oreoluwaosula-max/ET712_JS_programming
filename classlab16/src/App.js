@@ -1,22 +1,41 @@
 import './App.css';
-import User from './user';
+import User from './user'
 
-import women from './images/woman.png';
-import men from './images/man.png';
-import boy from './images/boy.png';
+import woman from './images/woman.png'
+import man from './images/man.png'
+import boy from './images/boy.png'
+
+import User_feedback from './user_feedback'
 
 function App() {
   return (
     <div className="App">
       <h1 style={{textAlign: "center"}}>Ore-Oluwa Osula</h1>
+     
       <main className='container'>
         {/* user 1 */}
-        <User image={women} username="Women" date="10/15/26" msg="Hello there!" /> 
+        <User_feedback username = "woman">
+          <User image = {woman}  date = "10/15/26" msg = "Hello world"/>
+          </User_feedback>
+        
         {/* user 2 */}
-        <User image={men} username="Men" date="10/16/26" msg="Hello there!" />
+        <User_feedback username = "man">
+          <User image = {man}  date = "10/16/26" msg = "Hello world!"/>
+          </User_feedback>
+        
         {/* user 3 */}
-        <User image={boy} username="Boy" date="10/17/26" msg="Hello there!" />
+        <User_feedback username = "boy">
+          <User image = {boy}  date = "10/17/26" msg = "Hello world"/>
+          </User_feedback>
       </main>
+
+      {/** POST COMMENTS */}
+      <section className="postcomment">
+        <ul className="commentlist">
+          <li>testing</li>
+        </ul>
+      </section>
+
     </div>
   );
 }
